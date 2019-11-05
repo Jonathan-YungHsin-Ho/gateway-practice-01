@@ -1,0 +1,30 @@
+{
+  "name": "gateway-practice-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon gateway.js",
+    "start": "node gateway.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonathan-YungHsin-Ho/gateway-practice-01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonathan-YungHsin-Ho/gateway-practice-01/issues"
+  },
+  "homepage": "https://github.com/Jonathan-YungHsin-Ho/gateway-practice-01#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^0.10.8",
+    "apollo-server": "^2.9.7",
+    "graphql": "^14.5.8"
+  }
+}
