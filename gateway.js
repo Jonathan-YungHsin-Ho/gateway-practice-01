@@ -3,9 +3,12 @@ const { ApolloGateway } = require('@apollo/gateway');
 
 const gateway = new ApolloGateway({
   serviceList: [
-    { name: 'core', url: 'http://localhost:4001' },
-    { name: 'interviewq', url: 'http://localhost:4002' },
-    { name: 'resumeq', url: 'http://localhost:4003' },
+    { name: 'core', url: 'https://qh-core-practice-01.herokuapp.com' },
+    {
+      name: 'interviewq',
+      url: 'https://qh-interviewq-practice-01.herokuapp.com/',
+    },
+    { name: 'resumeq', url: 'https://qh-resumeq-practice-01.herokuapp.com/' },
   ],
 });
 
