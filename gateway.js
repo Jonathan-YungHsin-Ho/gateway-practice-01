@@ -15,7 +15,12 @@ const gateway = new ApolloGateway({
 (async () => {
   const { schema, executor } = await gateway.load();
 
-  const server = new ApolloServer({ schema, executor });
+  const server = new ApolloServer({
+    schema,
+    executor,
+    introspection: true,
+    playground: true,
+  });
 
   const port = process.env.PORT || 4000;
 
